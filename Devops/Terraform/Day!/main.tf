@@ -1,12 +1,14 @@
 provider "aws" {
     region = "us-east-1"
+
 }
 
 
 resource "aws_instance" "buildserver" {
-  ami                     = "ami-0dcc1e21636832c5d"
-  instance_type           = "t2.micro"
-  subnet_id = "subnet-00a8ca8ec38453dc9"
+  ami                     = "ami-091138d0f0d41ff90"
+  instance_type           = "t3.micro"
+  subnet_id = "subnet-0827a92e0fd246ec1"
   key_name = "AWS_login"
 }
 
+ 
